@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="web.css">
+    <title>web</title>
+</head>
+<body>
+    <form>
+    <h1>Temperature conversion:</h1>
+    <input type="number" id="tb" value="0"><br>
+
+    <input type="radio" name="unit" id="cF">
+    <label for="cF">Celsius -> Fahrenheit</label><br>
+
+    <input type="radio" name="unit" id="cC">
+    <label for="cC">Fahrenheit -> Celsius </label><br>
+
+    <button type="button" id="button" onclick="convert()">Submit</button>
+    <p id="result"></p>
+
+    </form>
+
+    <p>Fahrenheit to Celsius: temp * 9 / 5 + 32
+    </p>
+
+    <p>Celsius to Fahrenheit: (temp - 32) * (5 / 9)
+    </p>
+
+
+    <script src="web.js"></script>
+</body>
+</html>
